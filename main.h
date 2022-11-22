@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+<<<<<<< HEAD
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -9,36 +10,61 @@
 #define BUFF_SIZE 1024
 
 /* FLAGS */
-
-#define F_MINUS 1
-
-#define F_PLUS 2
-
-#define F_ZERO 4
-
-#define F_HASH 8
-
-#define F_SPACE 16
+=======
 
 
+#include <stdarg.h>
 
-/* SIZES */
+int _putchar(char c);
+>>>>>>> 9f2ec30c846e981c56c4c7b7460bde92317a8455
 
-#define S_LONG 2
+int _printf(const char *format, ...);
 
-#define S_SHORT 1
+int print_char(va_list c);
 
+int print_string(va_list s);
 
+int print_int(va_list i);
+
+int print_dec(va_list d);
+
+int print_rev(va_list r);
+
+int print_bin(va_list b);
+
+int print_unsig(va_list u);
+
+int print_octal(va_list o);
+
+int print_x(va_list x);
+
+int print_X(va_list X);
+
+int print_rot13(va_list R);
 
 /**
+<<<<<<< HEAD
  * struct fmt - Struct op
  * @fmt: The format.
  * @fn: The function associated.
  */
+=======
+ *
+ *   * struct code_format - Struct format
+ *
+ *     *
+ *
+ *       * @sc: The specifiers
+ *
+ *         * @f: The function associated
+ *
+ *           */
+>>>>>>> 9f2ec30c846e981c56c4c7b7460bde92317a8455
 
-struct fmt
+typedef struct code_format
 
 {
+<<<<<<< HEAD
 	char fmt;
 	int (*fn)(va_list, char[], int, int, int, int);
 };
@@ -159,3 +185,14 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */
+=======
+
+		char *sc;
+
+			int (*f)(va_list);
+
+} code_f;
+
+
+
+#endif /* ALX*/
