@@ -32,16 +32,13 @@ int print_X(va_list X);
 int print_rot13(va_list R);
 
 /**
+ * struct code_format - Struct format
  *
- *   * struct code_format - Struct format
+ * @sc: The specifiers
  *
- *     *
+ * @f: The function associated
  *
- *       * @sc: The specifiers
- *
- *         * @f: The function associated
- *
- *           */
+ */
 
 typedef struct code_format
 
